@@ -156,6 +156,7 @@ _REGULAR_SUPPORTED_MODEL_NAMES_AND_TASKS = [
     "opt",
     "pegasus",
     "plbart",
+    "plm",
     "qwen2",
     "qwen2_moe",
     "qwen3",

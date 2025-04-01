@@ -21,6 +21,7 @@ FILES_TO_PARSE = [
     os.path.join(MODEL_ROOT, "mixtral", "modular_mixtral.py"),
     os.path.join(MODEL_ROOT, "olmo", "modular_olmo.py"),
     os.path.join(MODEL_ROOT, "rt_detr", "modular_rt_detr.py"),
+    os.path.join(MODEL_ROOT, "plm", "modular_plm.py"),
     os.path.join(MODEL_ROOT, "qwen2", "modular_qwen2.py"),
     os.path.join(MODEL_ROOT, "qwen3", "modular_qwen3.py"),
     os.path.join(MODEL_ROOT, "qwen3", "modular_qwen3_moe.py"),

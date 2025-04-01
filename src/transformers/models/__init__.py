@@ -219,6 +219,7 @@ from . import (
     pix2struct,
     pixtral,
     plbart,
+    plm,
     poolformer,
     pop2piano,
     prompt_depth_anything,

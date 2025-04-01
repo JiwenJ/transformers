@@ -717,6 +717,7 @@ _import_structure = {
     ],
     "models.pixtral": ["PixtralProcessor", "PixtralVisionConfig"],
     "models.plbart": ["PLBartConfig"],
+    "models.plm": ["PLMConfig"],
     "models.poolformer": ["PoolFormerConfig"],
     "models.pop2piano": ["Pop2PianoConfig"],
     "models.prompt_depth_anything": ["PromptDepthAnythingConfig"],
@@ -3357,6 +3358,15 @@ else:
             "PLBartPreTrainedModel",
         ]
     )
+    _import_structure["models.plm"].extend(
+        [
+            "PLMForCausalLM",
+            "PLMForSequenceClassification",
+            "PLMForTokenClassification"
+            "PLMModel",
+            "PLMPreTrainedModel",
+        ]
+    )
     _import_structure["models.poolformer"].extend(
         [
             "PoolFormerForImageClassification",
@@ -5988,6 +5998,7 @@ if TYPE_CHECKING:
         PixtralVisionConfig,
     )
     from .models.plbart import PLBartConfig
+    from .models.plm import PLMConfig
     from .models.poolformer import (
         PoolFormerConfig,
     )
@@ -8253,6 +8264,13 @@ if TYPE_CHECKING:
             PLBartForSequenceClassification,
             PLBartModel,
             PLBartPreTrainedModel,
+        )
+        from .models.plm import (
+            PLMForCausalLM,
+            PLMForSequenceClassification,
+            PLMForTokenClassification,
+            PLMModel,
+            PLMPreTrainedModel,
         )
         from .models.poolformer import (
             PoolFormerForImageClassification,

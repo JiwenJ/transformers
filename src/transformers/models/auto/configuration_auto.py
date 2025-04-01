@@ -241,6 +241,7 @@ CONFIG_MAPPING_NAMES = OrderedDict(
         ("pix2struct", "Pix2StructConfig"),
         ("pixtral", "PixtralVisionConfig"),
         ("plbart", "PLBartConfig"),
+        ("plm", "PLMConfig"),
         ("poolformer", "PoolFormerConfig"),
         ("pop2piano", "Pop2PianoConfig"),
         ("prompt_depth_anything", "PromptDepthAnythingConfig"),
